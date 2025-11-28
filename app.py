@@ -135,7 +135,7 @@ def get_answer_from_vectorstore(query):
     retriever = vectorstore.as_retriever(search_kwargs={"k": 6})
     
     # Ajustado para gemini-1.5-flash (Versão estável atual)
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.0)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.0)
     
     template = """Você é o Assistente Corporativo da FSB.
     Você tem acesso a múltiplos documentos internos.
